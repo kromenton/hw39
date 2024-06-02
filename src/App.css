@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #666a2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  background-color: #ddd3c6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-text {
+  flex: 1;
+  text-align: left;
+}
+
+.todo-actions {
+  margin-left: 10px;
+}
+
+.todo-actions button {
+  padding: 5px 10px;
+  background-color: #998124;
+  color: #efef0d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-actions button:hover {
+  background-color: #4f523b;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Стили для input */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 80px);
+  background-color: cornsilk;
+  margin-bottom: 20px;
+}
+
+/* Стили для кнопки "Add Todo" */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #998124;
+  color: #efef0d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4f523b;
+}
